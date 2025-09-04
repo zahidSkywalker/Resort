@@ -1,0 +1,18 @@
+version: '3.9'
+services:
+  web:
+    build: .
+    environment:
+      - NODE_ENV=production
+      - NEXTAUTH_URL=${NEXTAUTH_URL}
+      - NEXTAUTH_SECRET=${NEXTAUTH_SECRET}
+      - DATABASE_PROVIDER=${DATABASE_PROVIDER}
+      - DATABASE_URL=${DATABASE_URL}
+      - STRIPE_SECRET_KEY=${STRIPE_SECRET_KEY}
+      - STRIPE_WEBHOOK_SECRET=${STRIPE_WEBHOOK_SECRET}
+      - CLOUDINARY_URL=${CLOUDINARY_URL}
+    ports:
+      - "3000:3000"
+    depends_on: []
+
+

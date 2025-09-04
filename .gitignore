@@ -1,0 +1,16 @@
+.next
+node_modules
+.env
+.env.*
+/.turbo
+/coverage
+/dist
+/build
+/out
+*.log
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+prisma/dev.db*
+
+
